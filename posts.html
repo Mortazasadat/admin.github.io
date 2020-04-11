@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="bootstrap4/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="all.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://cdn.ckeditor.com/4.14.0/standard/ckeditor.js"></script>
+
+    <title>AdminStrap</title>
+  </head>
+  <body>
+
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="index.html">AdminStrap</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      
+      <li class="nav-item">
+        <a class="nav-link " href="index.html">Dashboard</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link " href="pages.html">Pages</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active" href="posts.html">Posts</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="users.html">Users</a>
+      </li>
+
+    </ul>
+     <ul class="navbar-nav ml-auto">
+      <li class="nav-item ">
+        <a class="nav-link" href="#">Welcom.Murtaza </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="login.html">LogOut</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+  <header id="header" style="margin-top: 40px;">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-10  col-sm-10">
+              <h1><span class="fas fa-cog"></span> Posts <small style="font-size: 20px;">Manage Blog Posts</small></h1>
+            </div>
+             <div class="col-md-2 col-sm-2">
+            <div class="dropdown create">
+              <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Create Content
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a type="button" class="dropdown-item" data-toggle="modal" data-target="#addpage">Add Page</a>
+                <a class="dropdown-item" href="#">Add Post</a>
+                <a class="dropdown-item" href="#">Add User</a>
+              </div>
+            </div>
+             </div>
+          </div>
+        </div>
+  </header>
+    <div class="container">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb ">
+            <li class="breadcrumb-item " aria-current="page">Dashboard</li>
+             <li class="breadcrumb-item " aria-current="page">Posts</li>
+          </ol>
+        </nav>
+    </div>
+
+    <section id="main">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 col-sm-3">
+            <div class="list-group">
+              <a href="#" class="list-group-item list-group-item-action main-color-bg">
+               <span class="fas fa-cog"></span> Dashboard 
+              </a>
+              <a href="#" class="list-group-item list-group-item-action"><span class="fas fa-pager"></span> Pages  <span class="badge badge-secondary float-md-right">12</span></a>
+              <a href="#" class="list-group-item list-group-item-action"><span class="fas fa-pen"></span> Posts  <span class="badge badge-secondary float-md-right">7</span></a>
+              <a href="#" class="list-group-item list-group-item-action"><span class="fas fa-user"></span> Users  <span class="badge badge-secondary float-md-right">286</span></a>
+              
+            </div>
+            <div class="well">
+              <h4>Disk Space Used</h4>
+              <div class="progress">
+                  <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">80%</div>
+                </div>
+              <h4>Bandwidth</h4>
+              <div class="progress">
+                  <div class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">70%</div>
+                </div>
+            </div>
+          </div>
+           <div class="col-md-9 col-sm-9">
+        
+              <div class="card">
+                <h5 class="card-header bg-dark">Posts</h5>
+                <div class="card-body">
+                  <form>
+                   <div class="form-group">
+                   
+                    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Filter Posts">
+                  </div>
+                 </form>
+              <table class="table table-striped">
+                <thead class="thead-dark">
+                  <tr>
+                  <th>Title</th>
+                  <th>publish</th>
+                  <th>created</th>
+                  <th>Actions</th>
+
+                </tr>
+                </thead>
+
+                <tr>
+                  <td>Home</td>
+                  <td><span class="fas fa-check"></span></td>
+                  <td>2020/4/9</td>
+                  <td><a class="btn btn-light" href="edit.html">Edit</a><a href="#" class="btn btn-danger">Delete</a></td>
+                </tr>
+                 <tr>
+                  <td>agricuture</td>
+                  <td><span class="fas fa-times"></span></td>
+                  <td>2020/4/9</td>
+                   <td><a class="btn btn-light" href="edit.html">Edit</a><a href="#" class="btn btn-danger">Delete</a></td>
+                </tr>
+                 <tr>
+                  <td>Science</td>
+                  <td><span class="fas fa-check"></span></td>
+                  <td>2020/4/9</td>
+                   <td><a class="btn btn-light" href="edit.html">Edit</a><a href="#" class="btn btn-danger">Delete</a></td>
+                </tr>
+                 <tr>
+                  <td>Earth</td>
+                  <td><span class="fas fa-times"></span></td>
+                  <td>2020/4/9</td>
+                   <td><a class="btn btn-light" href="edit.html">Edit</a><a href="#" class="btn btn-danger">Delete</a></td>
+                </tr>
+                 <tr>
+                  <td>galaxy</td>
+                  <td><span class="fas fa-check"></span></td>
+                  <td>2020/4/9</td>
+                   <td><a class="btn btn-light" href="edit.html">Edit</a><a href="#" class="btn btn-danger">Delete</a></td>
+                </tr>
+              </table>
+
+
+                </div>
+              </div>
+
+            
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+<section id="footer">
+  <p>Copywrite AdminStrap &copy; 2020</p>
+</section>
+
+
+
+
+  <!-- model section -->
+<!-- add page modal -->
+        <div class="modal fade" id="addpage" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <form>
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Add Page</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+      
+               <div class="form-group">
+                  <label for="exampleFormControlInput1">Page Title</label>
+                  <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="title">
+                </div>
+                   <div class="form-group">
+                  <label for="exampleFormControlTextarea1">Page Body</label>
+                  <textarea name="editor1" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+                 <div class="form-group form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">publish</label>
+                </div>
+                <div class="form-group">
+                  <label for="exampleFormControlInput1">Meta Tags</label>
+                  <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="add some tags">
+                </div>
+                 <div class="form-group">
+                  <label for="exampleFormControlInput1">Meta Descriptions</label>
+                  <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="add descriptions">
+                </div>
+                 </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+              </div>
+            </form>
+            </div>
+          </div>
+        </div>
+
+<script>
+   CKEDITOR.replace( 'editor1' );
+  </script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="bootstrap4/jquery.js"></script>
+    <script src="bootstrap4/popper.min.js"></script>
+    <script src="bootstrap4/js/bootstrap.min.js"></script>
+  </body>
+</html>
